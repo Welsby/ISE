@@ -61,7 +61,7 @@ def text_to_embedding(tokens):
 
 
 def load_and_preprocess_data():
-    df = pd.read_csv("../datasets/tensorflow.csv")
+    df = pd.read_csv("../datasets/caffe.csv")
     df = df[['Title', 'Body', 'class']]
     df['Body'] = df['Body'].fillna('')
     df['text'] = df['Title'] + " " + df['Body']

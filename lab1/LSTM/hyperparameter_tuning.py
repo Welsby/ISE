@@ -16,7 +16,7 @@ def objective(trial):
     hidden_dim = trial.suggest_int("hidden_dim", 64, 512, step=32)
     num_layers = trial.suggest_int("num_layers", 1, 5)
     learning_rate = trial.suggest_loguniform("learning_rate", 1e-5, 0.01)
-    batch_size = trial.suggest_categorical("batch_size", [32, 64, 128, 256])
+    batch_size = trial.suggest_int("batch_size", 32, 256, step=8)
 
     # Load and preprocess data
     X, y = load_and_preprocess_data()

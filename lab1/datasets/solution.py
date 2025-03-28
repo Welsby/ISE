@@ -77,7 +77,7 @@ import os
 import subprocess
 
 # Choose the project (options: 'pytorch', 'tensorflow', 'keras', 'incubator-mxnet', 'caffe')
-project = 'pytorch'
+project = 'caffe'
 path = f'{project}.csv'
 
 pd_all = pd.read_csv(path)

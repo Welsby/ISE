@@ -6,10 +6,10 @@ print(f"Using device: {device}")
 
 # Hyperparameters
 embedding_dim = 300
-hidden_dim = 300
-num_layers = 4
+hidden_dim = 192
+num_layers = 2
 output_dim = 1
-batch_size = 128
-num_epochs = 15
-learning_rate = 0.005
+batch_size = 32
+num_epochs = 5
+learning_rate = 0.0007
 num_runs = 10
